@@ -31,6 +31,9 @@ public class MYCalc {
 		if(inserted_menu==1){
 			int add_result = Add(number1, number2);
 			System.out.print(add_result);
+		}else if(inserted_menu==2){
+			int subtract_result = Subtract(number1, number2);
+			System.out.print(subtract_result);
 		}
 		System.out.print("\r");
 		}while(inserted_menu!=4);
@@ -43,5 +46,7 @@ public class MYCalc {
 		return number1 + number2;
 	}
 	
-	
+	static int Subtract(int number1, int number2) {
+		return number1 - number2;
+	}
 }
